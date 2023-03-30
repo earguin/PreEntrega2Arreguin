@@ -27,11 +27,7 @@ header {
 .navbar-toggler-icon {
     color: #1a405e;
 }
-a.nav-link{
-    color: #1a405e;
-    font-family:'Montserrat', sans-serif;
-    font-weight:500;
-}
+
 .encLogo {
     margin: 80px auto;
     width: 60%;
@@ -103,8 +99,6 @@ a.nav-link{
     color: #1a405e;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 
 .servImg img {
@@ -117,8 +111,7 @@ a.nav-link{
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-weight:bold;
-    padding: 5px 20px;
+    padding-top: 20px;
 }
 
 .tratamientos {
@@ -156,8 +149,6 @@ a.nav-link{
     color: #1a405e;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
 }
 
 .tratamientosImg {
@@ -204,71 +195,6 @@ a.nav-link{
     padding-left: 25px;
 }
 
-/*BLOG*/
-.articulos{
-    width: 100%;
-    height: auto;
-    background-color: #dfded659;
-    display: grid;
-    padding: 20px 20px 0 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-        "artP artP artP"
-        "art1 art2 art3"
-        "npag npag npag";
-}
-
-.itemArtic1 {
-    grid-area: artP;    
-}
-
-
-.itemArtic2 {
-    grid-area: art1;
-}
-
-.itemArtic3 {
-    grid-area: art2;
-}
-
-.itemArtic4 {
-    grid-area: art3;
-}
-
-.itemArtic5 {
-    grid-area: npag;
-}
-
-.card{
-    min-height: 300px;
-    /* width: 30%; */
-    /* background-color: #0a0a09; */
-}
-
-.card__img{
-    /* width: 100%; */
-}
-
-.card__title{
-    text-align: center;
-    color:#eb762c;
-    
-}
-
-.card__txt{
-    color:#1a405e;
-    padding: 20px;
-}
-
-.card__button{
-    color: #ba322b;
-    text-decoration: none;
-    
-}
-
-
-
 footer {
     width: 100%;
     height: 150px;
@@ -289,7 +215,6 @@ footer {
 
 .itemFooter2 {
     grid-area: redes;
-    text-align: left;
 }
 
 .itemFooter3 {
@@ -330,16 +255,8 @@ footer {
     color: #fff;
 }
 
-@media only screen and (max-width: 576px) {
-
-    .encLogo {
-        width: 90%;
-    }
-
-    .imgLogo {
-        width: 100%;
-    }
-
+/*1:10 time grid*/
+@media only screen and (max-width:575px) {
     .servicios {
         display: block;
     }
@@ -348,38 +265,37 @@ footer {
         display: block;
     }
 
-    footer {
-        display: block;
+    .itemTrat {
+        list-style-type: circle;
+        padding-left: initial;
     }
 }
 
-@media only screen and (min-width:578px) and (max-width:767px){
-    .servicios{
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .servicios {
         display: block;
     }
-
-    .item{
+    
+    .item {
         display: inline-block;
         width: 45%;
     }
-    .item0{
-        display: inline-block;
+
+    .item0 {
         width: 100%;
-        text-align: center;
     }
+    
 }
-@media only screen and (min-width:768px)and (max-width:991px){
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .servicios{
         display: block;
     }
-            .item{
-            display: inline-block;
-            width: 30%;
-        }
-        .item0{
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-        }
+    .item{
+        display:inline-block;
+        width: 30%;
+    }
+    .item0{
+        width: 100%;
+    }
 }
-
