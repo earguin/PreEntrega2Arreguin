@@ -195,6 +195,48 @@ header {
     padding-left: 25px;
 }
 
+.articulos{
+    width: 100%;
+    height: auto;
+    background-color: #dfded659;
+    /* border:5px solid #dfded6; */
+    display: grid;
+    padding: 20px 20px 0 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 50px;
+    grid-template-areas:
+        "artPimg artPtxt artPtxt"
+        "art3 art4 art5"
+        "pag pag pag";
+}
+.itemArtic1{
+    grid-area: artPimg;
+}
+.itemArtic2{
+    grid-area: artPtxt;
+}
+.itemArtic3{
+    grid-area: art3;
+}
+.itemArtic4{
+    grid-area: art4;
+}
+.itemArtic5{
+    grid-area: art5;
+}
+.itemArtic6{
+    grid-area: pag;
+    text-align: center
+}
+
+.card__title{
+    color:#eb762c;
+    font-family:  'Montserrat', sans-serif;
+}
+.paginacion{
+    margin: 15px;
+}
 footer {
     width: 100%;
     height: 150px;
@@ -269,6 +311,10 @@ footer {
         list-style-type: circle;
         padding-left: initial;
     }
+
+    .articulos{
+        display:block;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -284,6 +330,10 @@ footer {
     .item0 {
         width: 100%;
     }
+    .articulos{
+        display:block;
+    }
+
     
 }
 
@@ -297,5 +347,15 @@ footer {
     }
     .item0{
         width: 100%;
+    }
+
+    .articulos{
+        display: block;        
+    }
+    .intemArtic{
+        display: inline-block;
+        width: 45%;
+        margin-bottom: 25px;
+        margin: 25px 10px 0 10px;
     }
 }
