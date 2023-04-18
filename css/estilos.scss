@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+//colores primarios
+$colorPrimario1: #eb762c;
+$colorPrimario2: #1a405e;
+$colorPrimario3: #ba322b;
+
+//fonts
+$tipografiaPrimaria1: 'Montserrat',
+sans-serif;
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +16,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: tipografiaPrimaria1;
 }
 
 header {
@@ -16,7 +25,7 @@ header {
     background-size: cover;
     background-position: center;
     padding-bottom: 15px;
-    border-bottom: 5px solid #1a405e;
+    border-bottom: 5px solid $colorPrimario2;
 }
 
 .navbar-brand img {
@@ -25,7 +34,7 @@ header {
 }
 
 .navbar-toggler-icon {
-    color: #1a405e;
+    color: $colorPrimario2;
 }
 
 .encLogo {
@@ -45,14 +54,14 @@ header {
 
 .btn-red {
     color: #fff;
-    border: 1px solid #ba322b;
-    background-color: #ba322b;
+    border: 1px solid $colorPrimario3;
+    background-color: $colorPrimario3;
     display: block;
     margin: 20px auto 0 auto;
 
 }
 
-.encSecundario{
+.encSecundario {
     height: 150px;
 }
 
@@ -71,25 +80,31 @@ header {
 
 .btn-red {
     color: #fff;
-    border: 1px solid #ba322b;
-    background-color: #ba322b;
+    border: 1px solid $colorPrimario3;
+    background-color: $colorPrimario3;
     display: inline;
     font-size: 12px;
     font-weight: bold;
-    margin: 0 0 0 20px;  
+    margin: 0 0 0 20px;
 
 }
 
-main{
+main {
     margin: 0 auto;
     height: auto;
 }
 
-.titulo{
-    color: #1a405e;
+.titulo {
+    color: $colorPrimario2;
     text-transform: uppercase;
     text-align: center;
     margin: 20px 0;
+}
+
+#acercaDe .card{
+    margin: 0 auto;
+    width: 75%;
+    border-bottom: 2px solid $colorPrimario3;
 }
 
 .servicios {
@@ -136,7 +151,7 @@ main{
 }
 
 .serviciosEnc {
-    color: #1a405e;
+    color: $colorPrimario2;
     text-transform: uppercase;
     text-align: center;
 }
@@ -147,9 +162,9 @@ main{
 }
 
 .servTit {
-    color: #ba322b;
+    color: $colorPrimario3;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: tipografiaPrimaria1;
     font-size: 20px;
     padding-top: 20px;
 }
@@ -186,7 +201,7 @@ main{
 }
 
 .tratamientoEnc {
-    color: #1a405e;
+    color: $colorPrimario2;
     text-transform: uppercase;
     text-align: center;
 }
@@ -202,7 +217,7 @@ main{
 }
 
 .itemTrat {
-    color: #eb762c;
+    color: $colorPrimario1;
     font-weight: bold;
     font-size: 20px;
 }
@@ -235,7 +250,7 @@ main{
     padding-left: 25px;
 }
 
-.articulos{
+.articulos {
     width: 100%;
     height: auto;
     background-color: #dfded659;
@@ -250,75 +265,87 @@ main{
         "art3 art4 art5"
         "pag pag pag";
 }
-.itemArtic1{
+
+.itemArtic1 {
     grid-area: artPimg;
 }
-.itemArtic2{
+
+.itemArtic2 {
     grid-area: artPtxt;
 }
-.itemArtic3{
+
+.itemArtic3 {
     grid-area: art3;
 }
-.itemArtic4{
+
+.itemArtic4 {
     grid-area: art4;
 }
-.itemArtic5{
+
+.itemArtic5 {
     grid-area: art5;
 }
-.itemArtic6{
+
+.itemArtic6 {
     grid-area: pag;
     text-align: center
 }
 
-.card__title{
-    color:#eb762c;
-    font-family:  'Montserrat', sans-serif;
+.card__title {
+    color: $colorPrimario1;
+    font-family: tipografiaPrimaria1;
 }
-.paginacion{
+
+.paginacion {
     margin: 15px;
 }
 
-.itemEC  .card-title{
-    margin-bottom :15px ;
+.itemEC .card-title {
+    margin-bottom: 15px;
     text-align: left;
-    color: #eb762c;
-    font-family: 'Montserrat', sans-serif;
+    color: $colorPrimario1;
+    font-family: tipografiaPrimaria1;
 }
+
 .itemEC .card-img {
     width: 350px;
     height: 235px;
     display: inline-block;
     vertical-align: top;
 }
-.itemEC .card-txt{
+
+.itemEC .card-txt {
     width: 850px;
     height: 235px;
     display: inline-block;
     margin-left: 15px;
 }
 
-.itemEC .btn{
-    float: right;    
+.itemEC .btn {
+    float: right;
 }
 
-.hospitales .titulo{
-    color: #eb762c;
+.hospitales .titulo {
+    color: $colorPrimario1;
     text-transform: none;
     text-align: left;
     margin: 20px 0;
 }
 
-.centrosSalud .titulo{
-    color:#eb762c;
+.centrosSalud .titulo {
+    color: $colorPrimario1;
     text-transform: none;
     text-align: left;
     margin: 20px 0;
 }
+
+//estilos preguntas frecuentes
+
 
 footer {
     width: 100%;
     height: 150px;
-    background-color: #1a405e;
+    background-color: $colorPrimario2;
     display: grid;
     padding: 20px;
     grid-template-columns: repeat(3, 1fr);
@@ -375,26 +402,31 @@ footer {
     color: #fff;
 }
 
+
 /*1:10 time grid*/
-@media only screen and (max-width:575px) {
-    header{
+@media only screen and (max-width:575px) 
+{
+    header {
         height: 150px;
     }
 
-    .encLogo{
+    .encLogo {
         margin: 0 auto;
         padding: 0;
     }
- 
-    .imgLogo{
+
+    .imgLogo {
         width: 100%;
         height: 100%;
     }
 
-    .encLogo .btn{
+    .encLogo .btn {
         display: none;
     }
 
+    #acercaDe .card{
+        width: 100%;
+    }
     .servicios {
         display: block;
     }
@@ -408,20 +440,21 @@ footer {
         padding-left: initial;
     }
 
-    .tratamientosImg{
+    .tratamientosImg {
         width: 100%;
         height: 100%;
     }
-    
-    .articulos{
+
+    .articulos {
         display: block;
     }
-    .itemEC .card-img{
+
+    .itemEC .card-img {
         display: block;
         width: 100%;
     }
 
-    .itemEC .card-txt{
+    .itemEC .card-txt {
         display: block;
         margin-left: initial;
         width: 100%;
@@ -430,50 +463,57 @@ footer {
         padding-top: 10px;
     }
 
-   .hospitales .titulo{
+    .hospitales .titulo {
         text-align: center;
     }
 
-    .hospitales .row
-    {   
+    .hospitales .row {
         display: block;
         margin: 0 auto;
     }
 
-    .hospitales .col{
+    .hospitales .col {
         border: 1px solid #ccc;
-        border-right: 4px solid #eb762c;
+        border-right: 4px solid $colorPrimario1;
         font-size: 14px;
         margin-bottom: 25px;
-    }   
+    }
 
-    .ubicacion{
+    .ubicacion {
         text-align: center;
     }
 
-    .centrosSalud .row{
+    .centrosSalud .row {
         display: block;
         margin: 0 auto;
     }
 
-    .centrosSalud .col{
+    .centrosSalud .col {
         border: 1px solid #ccc;
-        border-right: 4px solid #eb762c;
+        border-right: 4px solid $colorPrimario1;
         font-size: 14px;
         margin-bottom: 25px;
     }
 
-    footer{
-        display: block;
-    }
-    
+//preguntas frecuentes
+div#accordionExample {
+    width: 75%;
+    margin: 0 auto;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    footer {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) 
+{
     .servicios {
         display: block;
     }
-    
+
     .item {
         display: inline-block;
         width: 45%;
@@ -482,105 +522,114 @@ footer {
     .item0 {
         width: 100%;
     }
-    .articulos{
-        display:block;
+
+    .articulos {
+        display: block;
     }
-    .itemEC .card-img{
+
+    .itemEC .card-img {
         width: 100%;
         height: auto;
     }
-    .itemEC .card-txt{
+
+    .itemEC .card-txt {
         margin-left: 5px;
         width: 100%;
         height: auto;
     }
 
-   .hospitales
-   {
-    margin-left: 15px;
-    width: 95%;
-   }
-
-   .hospitales .col{
-    border: 1px solid #ccc;
-    border-right: 4px solid #eb762c;
-    font-size: 14px;
-    margin-bottom: 25px;
-    padding: 10px;
-}   
-
-.centrosSalud
-{
- margin-left: 15px;
- width: 95%;
-}
-
-.centrosSalud .col{
- border: 1px solid #ccc;
- border-right: 4px solid #eb762c;
- font-size: 14px;
- margin-bottom: 25px;
- padding: 10px;
-}   
-
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .servicios{
-        display: block;
-    }
-    .item{
-        display:inline-block;
-        width: 30%;
-    }
-    .item0{
-        width: 100%;
+    .hospitales {
+        margin-left: 15px;
+        width: 95%;
     }
 
-    .articulos{
-        display: block;        
-    }
-    .intemArtic{
-        display: inline-block;
-        width: 45%;
+    .hospitales .col {
+        border: 1px solid #ccc;
+        border-right: 4px solid $colorPrimario1;
+        font-size: 14px;
         margin-bottom: 25px;
-        margin: 25px 10px 0 10px;
+        padding: 10px;
     }
-    .itemEC .card-img{
-        display: inline-block;
-        width: 35%;
-        height: 250px;
-        vertical-align: top;
+
+    .centrosSalud {
+        margin-left: 15px;
+        width: 95%;
     }
-    .itemEC .card-txt{
-        display: inline-block;
-        width: 60%;
-        height: 250px;
-        /* float: left; */
-        margin-left: 0;
+
+    .centrosSalud .col {
+        border: 1px solid #ccc;
+        border-right: 4px solid $colorPrimario1;
+        font-size: 14px;
+        margin-bottom: 25px;
+        padding: 10px;
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .hospitales{
-        margin-left: 20px;
-    }
-    .centrosSalud
+
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) 
     {
-        margin-left: 20px;
+        .servicios {
+            display: block;
+        }
+
+        .item {
+            display: inline-block;
+            width: 30%;
+        }
+
+        .item0 {
+            width: 100%;
+        }
+
+        .articulos {
+            display: block;
+        }
+
+        .intemArtic {
+            display: inline-block;
+            width: 45%;
+            margin-bottom: 25px;
+            margin: 25px 10px 0 10px;
+        }
+
+        .itemEC .card-img {
+            display: inline-block;
+            width: 35%;
+            height: 250px;
+            vertical-align: top;
+        }
+
+        .itemEC .card-txt {
+            display: inline-block;
+            width: 60%;
+            height: 250px;
+            /* float: left; */
+            margin-left: 0;
+        }
     }
-    .itemEC .card-img{
-        display: inline-block;
-        width: 35%;
-        height: 250px;
-        vertical-align: top;
+
+    @media only screen and (min-width: 992px) 
+    {
+        .hospitales {
+            margin-left: 20px;
+        }
+
+        .centrosSalud {
+            margin-left: 20px;
+        }
+
+        .itemEC .card-img {
+            display: inline-block;
+            width: 35%;
+            height: 250px;
+            vertical-align: top;
+        }
+
+        .itemEC .card-txt {
+            display: inline-block;
+            width: 60%;
+            height: 250px;
+            margin-left: 0;
+        }
     }
-    .itemEC .card-txt{
-        display: inline-block;
-        width: 60%;
-        height: 250px;
-        /* float: left; */
-        margin-left: 0;
-    }
-}
