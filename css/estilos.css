@@ -1,586 +1,550 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
-    height: 400px;
-    background-image: url(./../images/gabriela_rodriguez_haeder-01.png);
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 15px;
-    border-bottom: 5px solid #1a405e;
+  height: 400px;
+  background-image: url(./../images/gabriela_rodriguez_haeder-01.png);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #1a405e;
 }
 
 .navbar-brand img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .navbar-toggler-icon {
-    color: #1a405e;
+  color: #1a405e;
 }
 
 .encLogo {
-    margin: 80px auto;
-    width: 60%;
-    height: auto;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-
+  margin: 80px auto;
+  width: 60%;
+  height: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .imgLogo {
-    width: 300px;
-    height: 100px;
+  width: 300px;
+  height: 100px;
 }
 
 .btn-red {
-    color: #fff;
-    border: 1px solid #ba322b;
-    background-color: #ba322b;
-    display: block;
-    margin: 20px auto 0 auto;
-
+  color: #fff;
+  border: 1px solid #ba322b;
+  background-color: #ba322b;
+  display: block;
+  margin: 20px auto 0 auto;
 }
 
-.encSecundario{
-    height: 150px;
+.encSecundario {
+  height: 150px;
 }
 
 .encSecundario .encLogo {
-    margin: 5px auto;
-    height: auto;
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  margin: 5px auto;
+  height: auto;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .encSecundario .imgLogo {
-    width: 150px;
-    height: 50px;
+  width: 150px;
+  height: 50px;
 }
 
 .btn-red {
-    color: #fff;
-    border: 1px solid #ba322b;
-    background-color: #ba322b;
-    display: inline;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0 0 0 20px;  
-
+  color: #fff;
+  border: 1px solid #ba322b;
+  background-color: #ba322b;
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0 0 20px;
 }
 
-main{
-    margin: 0 auto;
-    height: auto;
+main {
+  margin: 0 auto;
+  height: auto;
 }
 
-.titulo{
-    color: #1a405e;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 20px 0;
+.titulo {
+  color: #1a405e;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .servicios {
-    width: 100%;
-    height: auto;
-    background-color: fff;
-    border: 5px solid #fff;
-    display: grid;
-    padding: 0;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 80px 350px;
-    grid-template-areas:
-        "servEnc servEnc servEnc servEnc servEnc"
-        "serv1 serv2 serv3 serv4 serv5";
+  width: 100%;
+  height: auto;
+  background-color: fff;
+  border: 5px solid #fff;
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 80px 350px;
+  grid-template-areas: "servEnc servEnc servEnc servEnc servEnc" "serv1 serv2 serv3 serv4 serv5";
 }
 
 .item {
-    border: 10px solid #fff;
-    text-align: center;
+  border: 10px solid #fff;
+  text-align: center;
 }
 
 .item0 {
-    grid-area: servEnc;
+  grid-area: servEnc;
 }
 
 .item1 {
-    grid-area: serv1;
+  grid-area: serv1;
 }
 
 .item2 {
-    grid-area: serv2;
+  grid-area: serv2;
 }
 
 .item3 {
-    grid-area: serv3;
+  grid-area: serv3;
 }
 
 .item4 {
-    grid-area: serv4;
+  grid-area: serv4;
 }
 
 .item5 {
-    grid-area: serv5;
+  grid-area: serv5;
 }
 
 .serviciosEnc {
-    color: #1a405e;
-    text-transform: uppercase;
-    text-align: center;
+  color: #1a405e;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .servImg img {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .servTit {
-    color: #ba322b;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    padding-top: 20px;
+  color: #ba322b;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 .tratamientos {
-    width: 100%;
-    height: auto;
-    background-color: #dfded659;
-    /* border:5px solid #dfded6; */
-    display: grid;
-    padding: 20px 20px 0 20px;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 80px auto;
-    grid-template-areas:
-        "tratEnc tratEnc"
-        "tratImg tratLista";
+  width: 100%;
+  height: auto;
+  background-color: rgba(223, 222, 214, 0.3490196078);
+  /* border:5px solid #dfded6; */
+  display: grid;
+  padding: 20px 20px 0 20px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 80px auto;
+  grid-template-areas: "tratEnc tratEnc" "tratImg tratLista";
 }
 
 .itemt {
-    /*border: 1px solid #fff;*/
+  /*border: 1px solid #fff;*/
 }
 
 .itemt1 {
-    grid-area: tratEnc;
+  grid-area: tratEnc;
 }
 
 .itemt2 {
-    grid-area: tratImg;
-    text-align: right;
+  grid-area: tratImg;
+  text-align: right;
 }
 
 .itemt3 {
-    grid-area: tratLista;
+  grid-area: tratLista;
 }
 
 .tratamientoEnc {
-    color: #1a405e;
-    text-transform: uppercase;
-    text-align: center;
+  color: #1a405e;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .tratamientosImg {
-    width: 300px;
-    height: 350;
+  width: 300px;
+  height: 350;
 }
 
 .luTrat {
-    margin-top: 30px;
-    list-style: none;
+  margin-top: 30px;
+  list-style: none;
 }
 
 .itemTrat {
-    color: #eb762c;
-    font-weight: bold;
-    font-size: 20px;
+  color: #eb762c;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .listItemTrat1 {
-    padding-left: 1px;
+  padding-left: 1px;
 }
 
 .listItemTrat2 {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 .listItemTrat3 {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .listItemTrat4 {
-    padding-left: 35px;
+  padding-left: 35px;
 }
 
 .listItemTrat5 {
-    padding-left: 45px;
+  padding-left: 45px;
 }
 
 .listItemTrat6 {
-    padding-left: 35px;
+  padding-left: 35px;
 }
 
 .listItemTrat7 {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
-.articulos{
-    width: 100%;
-    height: auto;
-    background-color: #dfded659;
-    /* border:5px solid #dfded6; */
-    display: grid;
-    padding: 20px 20px 0 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
-    grid-gap: 50px;
-    grid-template-areas:
-        "artPimg artPtxt artPtxt"
-        "art3 art4 art5"
-        "pag pag pag";
-}
-.itemArtic1{
-    grid-area: artPimg;
-}
-.itemArtic2{
-    grid-area: artPtxt;
-}
-.itemArtic3{
-    grid-area: art3;
-}
-.itemArtic4{
-    grid-area: art4;
-}
-.itemArtic5{
-    grid-area: art5;
-}
-.itemArtic6{
-    grid-area: pag;
-    text-align: center
+.articulos {
+  width: 100%;
+  height: auto;
+  background-color: rgba(223, 222, 214, 0.3490196078);
+  /* border:5px solid #dfded6; */
+  display: grid;
+  padding: 20px 20px 0 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-gap: 50px;
+  grid-template-areas: "artPimg artPtxt artPtxt" "art3 art4 art5" "pag pag pag";
 }
 
-.card__title{
-    color:#eb762c;
-    font-family:  'Montserrat', sans-serif;
-}
-.paginacion{
-    margin: 15px;
+.itemArtic1 {
+  grid-area: artPimg;
 }
 
-.itemEC  .card-title{
-    margin-bottom :15px ;
-    text-align: left;
-    color: #eb762c;
-    font-family: 'Montserrat', sans-serif;
+.itemArtic2 {
+  grid-area: artPtxt;
 }
+
+.itemArtic3 {
+  grid-area: art3;
+}
+
+.itemArtic4 {
+  grid-area: art4;
+}
+
+.itemArtic5 {
+  grid-area: art5;
+}
+
+.itemArtic6 {
+  grid-area: pag;
+  text-align: center;
+}
+
+.card__title {
+  color: #eb762c;
+  font-family: "Montserrat", sans-serif;
+}
+
+.paginacion {
+  margin: 15px;
+}
+
+.itemEC .card-title {
+  margin-bottom: 15px;
+  text-align: left;
+  color: #eb762c;
+  font-family: "Montserrat", sans-serif;
+}
+
 .itemEC .card-img {
-    width: 350px;
-    height: 235px;
-    display: inline-block;
-    vertical-align: top;
-}
-.itemEC .card-txt{
-    width: 850px;
-    height: 235px;
-    display: inline-block;
-    margin-left: 15px;
+  width: 350px;
+  height: 235px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.itemEC .btn{
-    float: right;    
+.itemEC .card-txt {
+  width: 850px;
+  height: 235px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
-.hospitales .titulo{
-    color: #eb762c;
-    text-transform: none;
-    text-align: left;
-    margin: 20px 0;
+.itemEC .btn {
+  float: right;
 }
 
-.centrosSalud .titulo{
-    color:#eb762c;
-    text-transform: none;
-    text-align: left;
-    margin: 20px 0;
+.hospitales .titulo {
+  color: #eb762c;
+  text-transform: none;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.centrosSalud .titulo {
+  color: #eb762c;
+  text-transform: none;
+  text-align: left;
+  margin: 20px 0;
 }
 
 footer {
-    width: 100%;
-    height: 150px;
-    background-color: #1a405e;
-    display: grid;
-    padding: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "footLogo footLogo redes"
-        "copyright copyright copyright";
+  width: 100%;
+  height: 150px;
+  background-color: #1a405e;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "footLogo footLogo redes" "copyright copyright copyright";
 }
 
 .itemFooter1 {
-    grid-area: footLogo;
-    text-align: center;
+  grid-area: footLogo;
+  text-align: center;
 }
 
 .itemFooter2 {
-    grid-area: redes;
+  grid-area: redes;
 }
 
 .itemFooter3 {
-    grid-area: copyright;
+  grid-area: copyright;
 }
 
 .itemFooter2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-        "wp fbk in mail";
-    font-size: xx-large;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "wp fbk in mail";
+  font-size: xx-large;
 }
 
 .itemRedes1 {
-    grid-area: wp;
+  grid-area: wp;
 }
 
 .itemRedes1 {
-    grid-area: fbk;
+  grid-area: fbk;
 }
 
 .itemRedes1 {
-    grid-area: in;
+  grid-area: in;
 }
 
 .itemRedes1 {
-    grid-area: mail;
+  grid-area: mail;
 }
 
 .footLogo {
-    width: 200px;
-    height: 80px;
+  width: 200px;
+  height: 80px;
 }
 
 .fa-brands {
-    color: #fff;
+  color: #fff;
 }
 
 /*1:10 time grid*/
-@media only screen and (max-width:575px) {
-    header{
-        height: 150px;
-    }
-
-    .encLogo{
-        margin: 0 auto;
-        padding: 0;
-    }
- 
-    .imgLogo{
-        width: 100%;
-        height: 100%;
-    }
-
-    .encLogo .btn{
-        display: none;
-    }
-
-    .servicios {
-        display: block;
-    }
-
-    .tratamientos {
-        display: block;
-    }
-
-    .itemTrat {
-        list-style-type: circle;
-        padding-left: initial;
-    }
-
-    .tratamientosImg{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .articulos{
-        display: block;
-    }
-    .itemEC .card-img{
-        display: block;
-        width: 100%;
-    }
-
-    .itemEC .card-txt{
-        display: block;
-        margin-left: initial;
-        width: 100%;
-        height: auto;
-        font-size: 14px;
-        padding-top: 10px;
-    }
-
-   .hospitales .titulo{
-        text-align: center;
-    }
-
-    .hospitales .row
-    {   
-        display: block;
-        margin: 0 auto;
-    }
-
-    .hospitales .col{
-        border: 1px solid #ccc;
-        border-right: 4px solid #eb762c;
-        font-size: 14px;
-        margin-bottom: 25px;
-    }   
-
-    .ubicacion{
-        text-align: center;
-    }
-
-    .centrosSalud .row{
-        display: block;
-        margin: 0 auto;
-    }
-
-    .centrosSalud .col{
-        border: 1px solid #ccc;
-        border-right: 4px solid #eb762c;
-        font-size: 14px;
-        margin-bottom: 25px;
-    }
-
-    footer{
-        display: block;
-    }
-    
+@media only screen and (max-width: 575px) {
+  header {
+    height: 150px;
+  }
+  .encLogo {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .imgLogo {
+    width: 100%;
+    height: 100%;
+  }
+  .encLogo .btn {
+    display: none;
+  }
+  .servicios {
+    display: block;
+  }
+  .tratamientos {
+    display: block;
+  }
+  .itemTrat {
+    list-style-type: circle;
+    padding-left: initial;
+  }
+  .tratamientosImg {
+    width: 100%;
+    height: 100%;
+  }
+  .articulos {
+    display: block;
+  }
+  .itemEC .card-img {
+    display: block;
+    width: 100%;
+  }
+  .itemEC .card-txt {
+    display: block;
+    margin-left: initial;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .hospitales .titulo {
+    text-align: center;
+  }
+  .hospitales .row {
+    display: block;
+    margin: 0 auto;
+  }
+  .hospitales .col {
+    border: 1px solid #ccc;
+    border-right: 4px solid #eb762c;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .ubicacion {
+    text-align: center;
+  }
+  .centrosSalud .row {
+    display: block;
+    margin: 0 auto;
+  }
+  .centrosSalud .col {
+    border: 1px solid #ccc;
+    border-right: 4px solid #eb762c;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  footer {
+    display: block;
+  }
 }
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    .servicios {
-        display: block;
-    }
-    
-    .item {
-        display: inline-block;
-        width: 45%;
-    }
-
-    .item0 {
-        width: 100%;
-    }
-    .articulos{
-        display:block;
-    }
-    .itemEC .card-img{
-        width: 100%;
-        height: auto;
-    }
-    .itemEC .card-txt{
-        margin-left: 5px;
-        width: 100%;
-        height: auto;
-    }
-
-   .hospitales
-   {
+  .servicios {
+    display: block;
+  }
+  .item {
+    display: inline-block;
+    width: 45%;
+  }
+  .item0 {
+    width: 100%;
+  }
+  .articulos {
+    display: block;
+  }
+  .itemEC .card-img {
+    width: 100%;
+    height: auto;
+  }
+  .itemEC .card-txt {
+    margin-left: 5px;
+    width: 100%;
+    height: auto;
+  }
+  .hospitales {
     margin-left: 15px;
     width: 95%;
-   }
-
-   .hospitales .col{
+  }
+  .hospitales .col {
     border: 1px solid #ccc;
     border-right: 4px solid #eb762c;
     font-size: 14px;
     margin-bottom: 25px;
     padding: 10px;
-}   
-
-.centrosSalud
-{
- margin-left: 15px;
- width: 95%;
+  }
+  .centrosSalud {
+    margin-left: 15px;
+    width: 95%;
+  }
+  .centrosSalud .col {
+    border: 1px solid #ccc;
+    border-right: 4px solid #eb762c;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding: 10px;
+  }
 }
-
-.centrosSalud .col{
- border: 1px solid #ccc;
- border-right: 4px solid #eb762c;
- font-size: 14px;
- margin-bottom: 25px;
- padding: 10px;
-}   
-
-
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .servicios{
-        display: block;
-    }
-    .item{
-        display:inline-block;
-        width: 30%;
-    }
-    .item0{
-        width: 100%;
-    }
-
-    .articulos{
-        display: block;        
-    }
-    .intemArtic{
-        display: inline-block;
-        width: 45%;
-        margin-bottom: 25px;
-        margin: 25px 10px 0 10px;
-    }
-    .itemEC .card-img{
-        display: inline-block;
-        width: 35%;
-        height: 250px;
-        vertical-align: top;
-    }
-    .itemEC .card-txt{
-        display: inline-block;
-        width: 60%;
-        height: 250px;
-        /* float: left; */
-        margin-left: 0;
-    }
+  .servicios {
+    display: block;
+  }
+  .item {
+    display: inline-block;
+    width: 30%;
+  }
+  .item0 {
+    width: 100%;
+  }
+  .articulos {
+    display: block;
+  }
+  .intemArtic {
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 25px;
+    margin: 25px 10px 0 10px;
+  }
+  .itemEC .card-img {
+    display: inline-block;
+    width: 35%;
+    height: 250px;
+    vertical-align: top;
+  }
+  .itemEC .card-txt {
+    display: inline-block;
+    width: 60%;
+    height: 250px;
+    /* float: left; */
+    margin-left: 0;
+  }
 }
-
 @media only screen and (min-width: 992px) {
-    .hospitales{
-        margin-left: 20px;
-    }
-    .centrosSalud
-    {
-        margin-left: 20px;
-    }
-    .itemEC .card-img{
-        display: inline-block;
-        width: 35%;
-        height: 250px;
-        vertical-align: top;
-    }
-    .itemEC .card-txt{
-        display: inline-block;
-        width: 60%;
-        height: 250px;
-        /* float: left; */
-        margin-left: 0;
-    }
+  .hospitales {
+    margin-left: 20px;
+  }
+  .centrosSalud {
+    margin-left: 20px;
+  }
+  .itemEC .card-img {
+    display: inline-block;
+    width: 35%;
+    height: 250px;
+    vertical-align: top;
+  }
+  .itemEC .card-txt {
+    display: inline-block;
+    width: 60%;
+    height: 250px;
+    /* float: left; */
+    margin-left: 0;
+  }
 }
+
+/*# sourceMappingURL=estilos.css.map */
