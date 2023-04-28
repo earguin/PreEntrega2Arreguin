@@ -9,7 +9,8 @@ $colorSecundario2: #ebbb88;
 $colorSecundario3: #fff;
 
 //fonts
-$tipografiaPrimaria1: 'Montserrat',sans-serif;
+$tipografiaPrimaria1: 'Montserrat',
+sans-serif;
 
 $fondo1: #dfded659;
 
@@ -19,7 +20,7 @@ $fondo1: #dfded659;
     box-sizing: border-box;
 }
 
-html{
+html {
     /*Genera un desplazamiento suave*/
     scroll-behavior: smooth;
 }
@@ -46,15 +47,15 @@ header {
     color: $colorPrimario2;
 }
 
-.nav-link{
-    color:$colorPrimario2 !important;
+.nav-link {
+    color: $colorPrimario2 !important;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     border-bottom: 3px solid $colorPrimario3;
 }
 
-.nav-link:active{
+.nav-link:active {
     border-bottom: 3px solid $colorPrimario3 !important;
 }
 
@@ -114,7 +115,7 @@ header {
 
 main {
     margin: 0 auto;
-    height: auto;    
+    height: auto;
 }
 
 .titulo {
@@ -124,10 +125,11 @@ main {
     margin: 20px 0;
 }
 
-#acercaDe{
+#acercaDe {
     background-color: $fondo1;
 }
-#acercaDe .card{
+
+#acercaDe .card {
     margin: 0 auto;
     width: 75%;
     // background-color: $fondo1;
@@ -136,7 +138,7 @@ main {
     flex-wrap: wrap;
 }
 
-#acercaDe .card .imgAcercaDe{
+#acercaDe .card .imgAcercaDe {
     width: 150px;
     height: 150px;
     padding: 10px 30px 0 10px;
@@ -326,7 +328,7 @@ main {
     padding: 5px 0 20px 0;
 }
 
-.itemArtic6 a{
+.itemArtic6 a {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -335,23 +337,22 @@ main {
     // vertical-align: center;
     padding: 5px;
     margin: 5px;
-    color:$colorSecundario3;
+    color: $colorSecundario3;
     text-decoration: none;
 }
 
-.itemArtic6 a:hover{
+.itemArtic6 a:hover {
     background-color: $colorSecundario1;
     text-decoration: underline;
 }
 
-.card{
+.card {
     padding: 20px;
     font-family: $tipografiaPrimaria1;
 }
 
-.itemArtic2 .card__title
-{
-    padding-top: initial;   
+.itemArtic2 .card__title {
+    padding-top: initial;
 }
 
 .card__title {
@@ -360,8 +361,8 @@ main {
     padding-top: 10px;
 }
 
-a.card__button{
-    background-color:$colorPrimario1;
+a.card__button {
+    background-color: $colorPrimario1;
     border-radius: 8px;
     display: inline-block;
     padding: 5px 10px;
@@ -372,11 +373,13 @@ a.card__button{
     font-family: $tipografiaPrimaria1;
     font-size: 14px;
 }
+
 a.card__button:hover {
-    background-color:$colorSecundario1; 
+    background-color: $colorSecundario1;
     font-family: $tipografiaPrimaria1;
     font-size: 14px;
 }
+
 .paginacion {
     margin: 15px;
 }
@@ -426,64 +429,64 @@ a.card__button:hover {
     margin: 0 auto;
     padding: 50px;
 
-    .accordion{
+    .accordion {
         background-color: #eb762c;
         color: #ba322b;
     }
 }
 
-.accordion-button{
-    color:$colorPrimario1;
+.accordion-button {
+    color: $colorPrimario1;
     font-weight: bold;
     border: none;
 }
 
-.accordion-button:not(.collapsed)
-{
+.accordion-button:not(.collapsed) {
     background-color: initial;
-    color:$colorPrimario1;        
+    color: $colorPrimario1;
     font-weight: bold;
 }
 
-.accordion-button:focus{
-    border-color: $colorSecundario2;    
-    box-shadow: 0 0 0 .25rem $colorSecundario2;
-}
-.accordion-body{
-    color:$colorPrimario2;
-}
-
-.accordion-button:hover{
-    border-color: $colorSecundario2;    
+.accordion-button:focus {
+    border-color: $colorSecundario2;
     box-shadow: 0 0 0 .25rem $colorSecundario2;
 }
 
-.accordion-button::after{
-    color:$colorSecundario3;
-    font-family: 'Font Awesome 6 Free';  
+.accordion-body {
+    color: $colorPrimario2;
+}
+
+.accordion-button:hover {
+    border-color: $colorSecundario2;
+    box-shadow: 0 0 0 .25rem $colorSecundario2;
+}
+
+.accordion-button::after {
+    color: $colorSecundario3;
+    font-family: 'Font Awesome 6 Free';
     font-weight: bold;
     content: '\3f';
     background-color: $colorPrimario3;
-    background-image: none;    
+    background-image: none;
     border-radius: 50%;
     width: 25px;
-    height:25px;
-    text-align: center;        
+    height: 25px;
+    text-align: center;
 }
 
-.accordion-button:not(.collapsed)::after{
-    color:$colorPrimario2;
+.accordion-button:not(.collapsed)::after {
+    color: $colorPrimario2;
     background-image: none;
-    font-family: 'Font Awesome 6 Free';   
-    font-size: 20px;   
+    font-family: 'Font Awesome 6 Free';
+    font-size: 20px;
     content: '\f328';
     background-color: $colorSecundario3;
-    background-image: none;    
+    background-image: none;
     border-radius: 50%;
     width: 30px;
-    height:30px;
-    text-align: center;       
-    transform: initial;    
+    height: 30px;
+    text-align: center;
+    transform: initial;
 }
 
 footer {
@@ -537,20 +540,21 @@ footer {
     grid-area: mail;
 }
 
-.itemRedes1 i:hover{
-    color:$colorSecundario3;
+.itemRedes1 i:hover {
+    color: $colorSecundario3;
     background-color: #1877f2;
 }
 
-.itemRedes2 i:hover{
-    color:rgb(29, 155, 240);
+.itemRedes2 i:hover {
+    color: rgb(29, 155, 240);
 }
 
-.itemRedes3 i:hover{    
-    color:$colorSecundario3;
-    background-color:#000;
+.itemRedes3 i:hover {
+    color: $colorSecundario3;
+    background-color: #000;
 }
-.itemRedes4 i:hover{
+
+.itemRedes4 i:hover {
     background-image: linear-gradient(to bottom right, #6600ff, #ff00cc, #ff0066, #ffcc00);
 }
 
@@ -563,23 +567,22 @@ footer {
     color: $colorSecundario3;
 }
 
-.subir{
-height: 40px;
-width: 40px;
-background-color: $colorPrimario3;
-color: $colorSecundario3;
-position: fixed;
-bottom: 40px;
-right: 40px;
-font-size: 20px;
-line-height: 40px;
-text-align: center;
-border-radius: 50%;
-border: 3px solid $colorSecundario3;
+.subir {
+    height: 40px;
+    width: 40px;
+    background-color: $colorPrimario3;
+    color: $colorSecundario3;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid $colorSecundario3;
 }
 
-@media only screen and (max-width: 576px) 
-{
+@media only screen and (max-width: 576px) {
     header {
         height: 150px;
     }
@@ -591,13 +594,14 @@ border: 3px solid $colorSecundario3;
         z-index: 5;
     }
 
-    .encLogo{
+    .encLogo {
         display: none;
     }
 
-    #acercaDe .card{
+    #acercaDe .card {
         width: 100%;
     }
+
     .servicios {
         display: block;
     }
@@ -620,15 +624,16 @@ border: 3px solid $colorSecundario3;
         display: block;
     }
 
-    .intemArtic{
+    .intemArtic {
         margin: 10px 0;
-    } 
-    .itemEC {
-        width:100%;
     }
 
-    .card-body{
-         padding: 0;
+    .itemEC {
+        width: 100%;
+    }
+
+    .card-body {
+        padding: 0;
     }
 
     .itemEC .card-img {
@@ -682,23 +687,24 @@ border: 3px solid $colorSecundario3;
         padding: 5px;
         width: 100%;
     }
+
     #preguntasFrecuentes {
         width: 100%;
         margin: 0 auto;
         padding: 5px;
         // border: 1px solid #f00;
     }
-    #accordionExample{
+
+    #accordionExample {
         width: 100%;
     }
+
     footer {
         display: block;
     }
-
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) 
-{
+@media only screen and (min-width: 576px) and (max-width: 767px) {
     #navbarNav {
         background-color: $colorSecundario3;
         padding: 0 5px;
@@ -761,77 +767,74 @@ border: 3px solid $colorSecundario3;
     }
 }
 
-
-
-    @media only screen and (min-width: 768px) and (max-width: 991px) 
-    {
-        #navbarNav{
-            background-color: $colorSecundario3;
-            border: 1px solid #ccc;
-            z-index: 5;
-            padding: 0 5px;
-        }
-        .servicios {
-            display: block;
-        }
-
-        .item {
-            display: inline-block;
-            width: 30%;
-        }
-
-        .item0 {
-            width: 100%;
-        }
-
-        .articulos {
-            display: block;
-        }
-
-        .intemArtic {
-            display: inline-block;
-            width: 45%;
-            margin-bottom: 25px;
-            margin: 25px 10px 0 10px;
-        }
-
-        .itemEC .card-img {
-            display: inline-block;
-            width: 35%;
-            height: 250px;
-            vertical-align: top;
-        }
-
-        .itemEC .card-txt {
-            display: inline-block;
-            width: 60%;
-            height: 250px;
-            /* float: left; */
-            margin-left: 20px;
-        }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #navbarNav {
+        background-color: $colorSecundario3;
+        border: 1px solid #ccc;
+        z-index: 5;
+        padding: 0 5px;
     }
 
-    @media only screen and (min-width: 992px) 
-    {
-        .hospitales {
-            margin-left: 20px;
-        }
-
-        .centrosSalud {
-            margin-left: 20px;
-        }
-
-        .itemEC .card-img {
-            display: inline-block;
-            width: 35%;
-            height: 250px;
-            vertical-align: top;
-        }
-
-        .itemEC .card-txt {
-            display: inline-block;
-            width: 60%;
-            height: 250px;
-            margin-left: 20px;
-        }
+    .servicios {
+        display: block;
     }
+
+    .item {
+        display: inline-block;
+        width: 30%;
+    }
+
+    .item0 {
+        width: 100%;
+    }
+
+    .articulos {
+        display: block;
+    }
+
+    .intemArtic {
+        display: inline-block;
+        width: 45%;
+        margin-bottom: 25px;
+        margin: 25px 10px 0 10px;
+    }
+
+    .itemEC .card-img {
+        display: inline-block;
+        width: 35%;
+        height: 250px;
+        vertical-align: top;
+    }
+
+    .itemEC .card-txt {
+        display: inline-block;
+        width: 60%;
+        height: 250px;
+        /* float: left; */
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .hospitales {
+        margin-left: 20px;
+    }
+
+    .centrosSalud {
+        margin-left: 20px;
+    }
+
+    .itemEC .card-img {
+        display: inline-block;
+        width: 35%;
+        height: 250px;
+        vertical-align: top;
+    }
+
+    .itemEC .card-txt {
+        display: inline-block;
+        width: 60%;
+        height: 250px;
+        margin-left: 20px;
+    }
+}
