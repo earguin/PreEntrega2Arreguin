@@ -4,10 +4,14 @@
 $colorPrimario1: #eb762c;
 $colorPrimario2: #1a405e;
 $colorPrimario3: #ba322b;
+$colorSecundario1: #ea5f07;
+$colorSecundario2: #ebbb88;
+$colorSecundario3: #fff;
 
 //fonts
-$tipografiaPrimaria1: 'Montserrat',
-sans-serif;
+$tipografiaPrimaria1: 'Montserrat',sans-serif;
+
+$fondo1: #dfded659;
 
 * {
     margin: 0;
@@ -15,8 +19,13 @@ sans-serif;
     box-sizing: border-box;
 }
 
+html{
+    /*Genera un desplazamiento suave*/
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: tipografiaPrimaria1;
+    font-family: $tipografiaPrimaria1;
 }
 
 header {
@@ -37,6 +46,20 @@ header {
     color: $colorPrimario2;
 }
 
+.nav-link{
+    color:$colorPrimario2 !important;
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid $colorPrimario3;
+}
+
+.nav-link:active{
+    border-bottom: 3px solid $colorPrimario3 !important;
+}
+
+
+
 .encLogo {
     margin: 80px auto;
     width: 60%;
@@ -53,7 +76,7 @@ header {
 }
 
 .btn-red {
-    color: #fff;
+    color: $colorSecundario3;
     border: 1px solid $colorPrimario3;
     background-color: $colorPrimario3;
     display: block;
@@ -79,7 +102,7 @@ header {
 }
 
 .btn-red {
-    color: #fff;
+    color: $colorSecundario3;
     border: 1px solid $colorPrimario3;
     background-color: $colorPrimario3;
     display: inline;
@@ -91,7 +114,7 @@ header {
 
 main {
     margin: 0 auto;
-    height: auto;
+    height: auto;    
 }
 
 .titulo {
@@ -101,18 +124,32 @@ main {
     margin: 20px 0;
 }
 
+#acercaDe{
+    background-color: $fondo1;
+}
 #acercaDe .card{
     margin: 0 auto;
     width: 75%;
+    // background-color: $fondo1;
     border-bottom: 2px solid $colorPrimario3;
+    flex-direction: initial;
+    flex-wrap: wrap;
+}
+
+#acercaDe .card .imgAcercaDe{
+    width: 150px;
+    height: 150px;
+    padding: 10px 30px 0 10px;
+    float: left;
 }
 
 .servicios {
-    width: 100%;
+    width: 85%;
     height: auto;
     background-color: fff;
-    border: 5px solid #fff;
+    border: 5px solid $colorSecundario3;
     display: grid;
+    margin: 0 auto;
     padding: 0;
     grid-template-columns: repeat(5, 20%);
     grid-template-rows: 80px 350px;
@@ -122,7 +159,7 @@ main {
 }
 
 .item {
-    border: 10px solid #fff;
+    border: 10px solid $colorSecundario3;
     text-align: center;
 }
 
@@ -164,7 +201,7 @@ main {
 .servTit {
     color: $colorPrimario3;
     text-transform: uppercase;
-    font-family: tipografiaPrimaria1;
+    font-family: $tipografiaPrimaria1;
     font-size: 20px;
     padding-top: 20px;
 }
@@ -172,19 +209,16 @@ main {
 .tratamientos {
     width: 100%;
     height: auto;
-    background-color: #dfded659;
+    background-color: $fondo1;
     /* border:5px solid #dfded6; */
     display: grid;
     padding: 20px 20px 0 20px;
+    margin: 0 auto;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 80px auto;
     grid-template-areas:
         "tratEnc tratEnc"
         "tratImg tratLista";
-}
-
-.itemt {
-    /*border: 1px solid #fff;*/
 }
 
 .itemt1 {
@@ -253,7 +287,7 @@ main {
 .articulos {
     width: 100%;
     height: auto;
-    background-color: #dfded659;
+    background-color: $fondo1;
     /* border:5px solid #dfded6; */
     display: grid;
     padding: 20px 20px 0 20px;
@@ -288,14 +322,61 @@ main {
 
 .itemArtic6 {
     grid-area: pag;
-    text-align: center
+    text-align: center;
+    padding: 5px 0 20px 0;
+}
+
+.itemArtic6 a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: $colorPrimario1;
+    text-align: center;
+    // vertical-align: center;
+    padding: 5px;
+    margin: 5px;
+    color:$colorSecundario3;
+    text-decoration: none;
+}
+
+.itemArtic6 a:hover{
+    background-color: $colorSecundario1;
+    text-decoration: underline;
+}
+
+.card{
+    padding: 20px;
+    font-family: $tipografiaPrimaria1;
+}
+
+.itemArtic2 .card__title
+{
+    padding-top: initial;   
 }
 
 .card__title {
     color: $colorPrimario1;
-    font-family: tipografiaPrimaria1;
+    font-family: $tipografiaPrimaria1;
+    padding-top: 10px;
 }
 
+a.card__button{
+    background-color:$colorPrimario1;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 5px 10px;
+    color: $colorSecundario3;
+    text-decoration: none;
+    text-align: center;
+    width: 120px;
+    font-family: $tipografiaPrimaria1;
+    font-size: 14px;
+}
+a.card__button:hover {
+    background-color:$colorSecundario1; 
+    font-family: $tipografiaPrimaria1;
+    font-size: 14px;
+}
 .paginacion {
     margin: 15px;
 }
@@ -304,7 +385,7 @@ main {
     margin-bottom: 15px;
     text-align: left;
     color: $colorPrimario1;
-    font-family: tipografiaPrimaria1;
+    font-family: $tipografiaPrimaria1;
 }
 
 .itemEC .card-img {
@@ -318,7 +399,7 @@ main {
     width: 850px;
     height: 235px;
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .itemEC .btn {
@@ -340,7 +421,70 @@ main {
 }
 
 //estilos preguntas frecuentes
+#preguntasFrecuentes {
+    width: 75%;
+    margin: 0 auto;
+    padding: 50px;
 
+    .accordion{
+        background-color: #eb762c;
+        color: #ba322b;
+    }
+}
+
+.accordion-button{
+    color:$colorPrimario1;
+    font-weight: bold;
+    border: none;
+}
+
+.accordion-button:not(.collapsed)
+{
+    background-color: initial;
+    color:$colorPrimario1;        
+    font-weight: bold;
+}
+
+.accordion-button:focus{
+    border-color: $colorSecundario2;    
+    box-shadow: 0 0 0 .25rem $colorSecundario2;
+}
+.accordion-body{
+    color:$colorPrimario2;
+}
+
+.accordion-button:hover{
+    border-color: $colorSecundario2;    
+    box-shadow: 0 0 0 .25rem $colorSecundario2;
+}
+
+.accordion-button::after{
+    color:$colorSecundario3;
+    font-family: 'Font Awesome 6 Free';  
+    font-weight: bold;
+    content: '\3f';
+    background-color: $colorPrimario3;
+    background-image: none;    
+    border-radius: 50%;
+    width: 25px;
+    height:25px;
+    text-align: center;        
+}
+
+.accordion-button:not(.collapsed)::after{
+    color:$colorPrimario2;
+    background-image: none;
+    font-family: 'Font Awesome 6 Free';   
+    font-size: 20px;   
+    content: '\f328';
+    background-color: $colorSecundario3;
+    background-image: none;    
+    border-radius: 50%;
+    width: 30px;
+    height:30px;
+    text-align: center;       
+    transform: initial;    
+}
 
 footer {
     width: 100%;
@@ -393,34 +537,61 @@ footer {
     grid-area: mail;
 }
 
+.itemRedes1 i:hover{
+    color:$colorSecundario3;
+    background-color: #1877f2;
+}
+
+.itemRedes2 i:hover{
+    color:rgb(29, 155, 240);
+}
+
+.itemRedes3 i:hover{    
+    color:$colorSecundario3;
+    background-color:#000;
+}
+.itemRedes4 i:hover{
+    background-image: linear-gradient(to bottom right, #6600ff, #ff00cc, #ff0066, #ffcc00);
+}
+
 .footLogo {
     width: 200px;
     height: 80px;
 }
 
 .fa-brands {
-    color: #fff;
+    color: $colorSecundario3;
 }
 
+.subir{
+height: 40px;
+width: 40px;
+background-color: $colorPrimario3;
+color: $colorSecundario3;
+position: fixed;
+bottom: 40px;
+right: 40px;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+border: 3px solid $colorSecundario3;
+}
 
-/*1:10 time grid*/
-@media only screen and (max-width:575px) 
+@media only screen and (max-width: 576px) 
 {
     header {
         height: 150px;
     }
 
-    .encLogo {
-        margin: 0 auto;
-        padding: 0;
+    #navbarNav {
+        background-color: $colorSecundario3;
+        border: 1px solid #ccc;
+        padding: 0 5px;
+        z-index: 5;
     }
 
-    .imgLogo {
-        width: 100%;
-        height: 100%;
-    }
-
-    .encLogo .btn {
+    .encLogo{
         display: none;
     }
 
@@ -447,6 +618,17 @@ footer {
 
     .articulos {
         display: block;
+    }
+
+    .intemArtic{
+        margin: 10px 0;
+    } 
+    .itemEC {
+        width:100%;
+    }
+
+    .card-body{
+         padding: 0;
     }
 
     .itemEC .card-img {
@@ -477,10 +659,14 @@ footer {
         border-right: 4px solid $colorPrimario1;
         font-size: 14px;
         margin-bottom: 25px;
+        padding: 5px;
+        width: 100%;
     }
 
     .ubicacion {
         text-align: center;
+        width: 100%;
+        padding: 0 5px;
     }
 
     .centrosSalud .row {
@@ -493,15 +679,18 @@ footer {
         border-right: 4px solid $colorPrimario1;
         font-size: 14px;
         margin-bottom: 25px;
+        padding: 5px;
+        width: 100%;
     }
-
-//preguntas frecuentes
-div#accordionExample {
-    width: 75%;
-    margin: 0 auto;
-}
-
-
+    #preguntasFrecuentes {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        // border: 1px solid #f00;
+    }
+    #accordionExample{
+        width: 100%;
+    }
     footer {
         display: block;
     }
@@ -510,6 +699,13 @@ div#accordionExample {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) 
 {
+    #navbarNav {
+        background-color: $colorSecundario3;
+        padding: 0 5px;
+        z-index: 5;
+        border: 1px solid #ccc;
+    }
+
     .servicios {
         display: block;
     }
@@ -569,6 +765,12 @@ div#accordionExample {
 
     @media only screen and (min-width: 768px) and (max-width: 991px) 
     {
+        #navbarNav{
+            background-color: $colorSecundario3;
+            border: 1px solid #ccc;
+            z-index: 5;
+            padding: 0 5px;
+        }
         .servicios {
             display: block;
         }
@@ -605,7 +807,7 @@ div#accordionExample {
             width: 60%;
             height: 250px;
             /* float: left; */
-            margin-left: 0;
+            margin-left: 20px;
         }
     }
 
@@ -630,6 +832,6 @@ div#accordionExample {
             display: inline-block;
             width: 60%;
             height: 250px;
-            margin-left: 0;
+            margin-left: 20px;
         }
     }

@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
         crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="shortcut icon" href="./../images/favicon.ico" type="image/x-icon">
@@ -58,7 +59,9 @@
         </nav>
         <div class="encLogo">
             <img class="imgLogo" src="./../images/gabriela_rodriguez_haeder-02.png" alt="logo psicologa Gabriela" class="img-fluid">
-            <button type="button" class="btn btn-red">Acerca de mi</button>
+            <button class="btn btn-red" type="button" data-bs-toggle="collapse" data-bs-target="#acercaDe" aria-expanded="false" aria-controls="collapseExample">
+                Acerca de mi
+            </button>
         </div>
 
     </header>
@@ -66,40 +69,45 @@
     <main>
         <h1 class="titulo">Blog</h1>
         <section class="articulos">
-            <div class="intemArtic itemArtic1">
-                <img src="./../images/gabriela_rodriguez_entrada de blog-01.png" alt="" class="card__img img-fluid">
+            <div class="intemArtic itemArtic1" data-aos="fade-up">
+                <img src="./../images/dia-psicologo.jpg" alt="" class="card__img img-fluid">
             </div>
-            <div class="intemArtic itemArtic2">
-                <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
-                <p class="card__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos debitis ut culpa voluptate odit cum, minus
-                    distinctio ab laudantium et.</p>
+            <div class="intemArtic itemArtic2" data-aos="fade-up">
+                <h3 class="card__title">Día del psicologo</h3>
+                <p class="card__txt">Nada más lejos de la realidad para ser un buen psicólogo hay que sentir la vocación requiere grandes esfuerzos,
+                    inestabilidad y falta de rutina, y hay que estar muy motivado para no tirar la toalla e irse al camino
+                    fácil por desgracia la psicología sigue siendo un gran tabú y eso dificulta su trabajo.
+                </p>
                 <a href="#" class="card__button">Leer más</a>
             </div>
-            <div class="intemArtic itemArtic3">
+            <div class="intemArtic itemArtic3" data-aos="fade-up">
                 <articule class="card">
-                    <img src="./../images/gabriela_rodriguez_entrada de blog-02.png" alt="" class="card__img img-fluid">
-                    <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
+                    <img src="./../images/terapeuta-transmite.jpg" alt="" class="card__img img-fluid">
+                    <h3 class="card__title">Tu terapeuta debe trasmitirte</h3>
                     <p class="card__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos debitis ut culpa voluptate odit cum, minus
                         distinctio ab laudantium et.</p>
                     <a href="#" class="card__button">Leer más</a>
                 </articule>
             </div>
-            <div class="intemArtic itemArtic4">
+            <div class="intemArtic itemArtic4" data-aos="fade-up">
                 <articule class="card">
-                    <img src="./../images/gabriela_rodriguez_entrada de blog-03.png" alt="" class="card__img img-fluid">
-                    <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
-                    <p class="card__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos debitis ut culpa voluptate odit cum, minus
-                        distinctio ab laudantium et.</p>
-                    <a href="#" class="card_button">Leer más</a>
+                    <img src="./../images/la-vida.jpg" alt="" class="card__img img-fluid">
+                    <h3 class="card__title">Esta es la vida</h3>
+                    <p class="card__txt">Hoy más que nunca les invito a aceptar que la #vida tiene buenas y malas, y que realmente, cada uno podemos
+                        ir #ConstruyendoElCamino, los #recuerdos y los #aprendizajes, para vivir esta vida.
+
+                    </p>
+                    <a href="#" class="card__button">Leer más</a>
                 </articule>
             </div>
-            <div class="intemArtic itemArtic5">
+            <div class="intemArtic itemArtic5" data-aos="fade-up">
                 <articule class="card">
-                    <img src="./../images/gabriela_rodriguez_entrada de blog-04.png" alt="" class="card__img img-fluid">
-                    <h3 class="card__title">Lorem ipsum dolor sit amet.</h3>
-                    <p class="card__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos debitis ut culpa voluptate odit cum, minus
-                        distinctio ab laudantium et.</p>
-                    <a href="#" class="card_button">Leer más</a>
+                    <img src="./../images/evitar-sobreproteccion.jpg" alt="" class="card__img img-fluid">
+                    <h3 class="card__title">Evitar la sobreprotección</h3>
+                    <p class="card__txt">La sobreprotección es igual a decirle a tus hijos(as) que no confías o crees en él o ella. Checa como
+                        evitarlo👇 #cpikuub
+                    </p>
+                    <a href="#" class="card__button">Leer más</a>
                 </articule>
             </div>
             <div class="intemArtic itemArtic6">
@@ -160,6 +168,10 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

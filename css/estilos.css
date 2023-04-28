@@ -5,8 +5,13 @@
   box-sizing: border-box;
 }
 
+html {
+  /*Genera un desplazamiento suave*/
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: tipografiaPrimaria1;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -25,6 +30,18 @@ header {
 
 .navbar-toggler-icon {
   color: #1a405e;
+}
+
+.nav-link {
+  color: #1a405e !important;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #ba322b;
+}
+
+.nav-link:active {
+  border-bottom: 3px solid #ba322b !important;
 }
 
 .encLogo {
@@ -88,18 +105,32 @@ main {
   margin: 20px 0;
 }
 
+#acercaDe {
+  background-color: rgba(223, 222, 214, 0.3490196078);
+}
+
 #acercaDe .card {
   margin: 0 auto;
   width: 75%;
   border-bottom: 2px solid #ba322b;
+  flex-direction: initial;
+  flex-wrap: wrap;
+}
+
+#acercaDe .card .imgAcercaDe {
+  width: 150px;
+  height: 150px;
+  padding: 10px 30px 0 10px;
+  float: left;
 }
 
 .servicios {
-  width: 100%;
+  width: 85%;
   height: auto;
   background-color: fff;
   border: 5px solid #fff;
   display: grid;
+  margin: 0 auto;
   padding: 0;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: 80px 350px;
@@ -149,7 +180,7 @@ main {
 .servTit {
   color: #ba322b;
   text-transform: uppercase;
-  font-family: tipografiaPrimaria1;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   padding-top: 20px;
 }
@@ -161,13 +192,10 @@ main {
   /* border:5px solid #dfded6; */
   display: grid;
   padding: 20px 20px 0 20px;
+  margin: 0 auto;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 80px auto;
   grid-template-areas: "tratEnc tratEnc" "tratImg tratLista";
-}
-
-.itemt {
-  /*border: 1px solid #fff;*/
 }
 
 .itemt1 {
@@ -269,11 +297,58 @@ main {
 .itemArtic6 {
   grid-area: pag;
   text-align: center;
+  padding: 5px 0 20px 0;
+}
+
+.itemArtic6 a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #eb762c;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.itemArtic6 a:hover {
+  background-color: #ea5f07;
+  text-decoration: underline;
+}
+
+.card {
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.itemArtic2 .card__title {
+  padding-top: initial;
 }
 
 .card__title {
   color: #eb762c;
-  font-family: tipografiaPrimaria1;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10px;
+}
+
+a.card__button {
+  background-color: #eb762c;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+a.card__button:hover {
+  background-color: #ea5f07;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 .paginacion {
@@ -284,7 +359,7 @@ main {
   margin-bottom: 15px;
   text-align: left;
   color: #eb762c;
-  font-family: tipografiaPrimaria1;
+  font-family: "Montserrat", sans-serif;
 }
 
 .itemEC .card-img {
@@ -298,7 +373,7 @@ main {
   width: 850px;
   height: 235px;
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 .itemEC .btn {
@@ -317,6 +392,70 @@ main {
   text-transform: none;
   text-align: left;
   margin: 20px 0;
+}
+
+#preguntasFrecuentes {
+  width: 75%;
+  margin: 0 auto;
+  padding: 50px;
+}
+#preguntasFrecuentes .accordion {
+  background-color: #eb762c;
+  color: #ba322b;
+}
+
+.accordion-button {
+  color: #eb762c;
+  font-weight: bold;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: initial;
+  color: #eb762c;
+  font-weight: bold;
+}
+
+.accordion-button:focus {
+  border-color: #ebbb88;
+  box-shadow: 0 0 0 0.25rem #ebbb88;
+}
+
+.accordion-body {
+  color: #1a405e;
+}
+
+.accordion-button:hover {
+  border-color: #ebbb88;
+  box-shadow: 0 0 0 0.25rem #ebbb88;
+}
+
+.accordion-button::after {
+  color: #fff;
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  content: "?";
+  background-color: #ba322b;
+  background-image: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: #1a405e;
+  background-image: none;
+  font-family: "Font Awesome 6 Free";
+  font-size: 20px;
+  content: "\f328";
+  background-color: #fff;
+  background-image: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transform: initial;
 }
 
 footer {
@@ -367,6 +506,24 @@ footer {
   grid-area: mail;
 }
 
+.itemRedes1 i:hover {
+  color: #fff;
+  background-color: #1877f2;
+}
+
+.itemRedes2 i:hover {
+  color: rgb(29, 155, 240);
+}
+
+.itemRedes3 i:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.itemRedes4 i:hover {
+  background-image: linear-gradient(to bottom right, #6600ff, #ff00cc, #ff0066, #ffcc00);
+}
+
 .footLogo {
   width: 200px;
   height: 80px;
@@ -376,20 +533,32 @@ footer {
   color: #fff;
 }
 
-/*1:10 time grid*/
-@media only screen and (max-width: 575px) {
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #ba322b;
+  color: #fff;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+@media only screen and (max-width: 576px) {
   header {
     height: 150px;
   }
+  #navbarNav {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    z-index: 5;
+  }
   .encLogo {
-    margin: 0 auto;
-    padding: 0;
-  }
-  .imgLogo {
-    width: 100%;
-    height: 100%;
-  }
-  .encLogo .btn {
     display: none;
   }
   #acercaDe .card {
@@ -411,6 +580,15 @@ footer {
   }
   .articulos {
     display: block;
+  }
+  .intemArtic {
+    margin: 10px 0;
+  }
+  .itemEC {
+    width: 100%;
+  }
+  .card-body {
+    padding: 0;
   }
   .itemEC .card-img {
     display: block;
@@ -436,9 +614,13 @@ footer {
     border-right: 4px solid #eb762c;
     font-size: 14px;
     margin-bottom: 25px;
+    padding: 5px;
+    width: 100%;
   }
   .ubicacion {
     text-align: center;
+    width: 100%;
+    padding: 0 5px;
   }
   .centrosSalud .row {
     display: block;
@@ -449,16 +631,28 @@ footer {
     border-right: 4px solid #eb762c;
     font-size: 14px;
     margin-bottom: 25px;
+    padding: 5px;
+    width: 100%;
   }
-  div#accordionExample {
-    width: 75%;
+  #preguntasFrecuentes {
+    width: 100%;
     margin: 0 auto;
+    padding: 5px;
+  }
+  #accordionExample {
+    width: 100%;
   }
   footer {
     display: block;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  #navbarNav {
+    background-color: #fff;
+    padding: 0 5px;
+    z-index: 5;
+    border: 1px solid #ccc;
+  }
   .servicios {
     display: block;
   }
@@ -505,6 +699,12 @@ footer {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  #navbarNav {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 5;
+    padding: 0 5px;
+  }
   .servicios {
     display: block;
   }
@@ -535,7 +735,7 @@ footer {
     width: 60%;
     height: 250px;
     /* float: left; */
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -555,7 +755,7 @@ footer {
     display: inline-block;
     width: 60%;
     height: 250px;
-    margin-left: 0;
+    margin-left: 20px;
   }
 }
 
